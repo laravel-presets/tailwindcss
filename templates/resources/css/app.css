@@ -1,0 +1,40 @@
+/*
+|--------------------------------------------------------------------------
+| Base styles
+|--------------------------------------------------------------------------
+|
+| This directive injects Tailwind's base styles, which are a
+| modification of normalize.css.
+| https://unpkg.com/tailwindcss/dist/base.css
+|
+| The following directive imports the base.css file, which contains
+| your own base styles.
+|
+*/
+@import 'tailwindcss/base';
+@import 'base';
+
+/*
+|--------------------------------------------------------------------------
+| Base components
+|--------------------------------------------------------------------------
+|
+| This directive injects Tailwind's base components, which are
+| the container classes and the plugins' components.
+|
+| The following directive imports the components.css file, which contains
+| your own components.
+|
+*/
+@import 'tailwindcss/components';
+@import 'components';
+
+/*
+|--------------------------------------------------------------------------
+| Utilities
+|--------------------------------------------------------------------------
+|
+| This directive injects Tailwind's utilities.
+|
+*/
+@import 'tailwindcss/utilities';
