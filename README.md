@@ -1,8 +1,8 @@
 <p align="center">
-  <h1 align="center">use-preset use-preset/laravel-tailwindcss</h1>
+  <h1 align="center">Laravel Tailwind CSS</h1>
   <p align="center">
     <a href="https://github.com/use-preset/use-preset/releases">
-      <img alt="npx use-preset use-preset/laravel-tailwindcss" src="https://img.shields.io/badge/use--preset-preset-blue?style=flat-square">
+      <img alt="npx use-preset use-preset/laravel-tailwindcss" src="https://img.shields.io/badge/use--preset-laravel--tailwindcss-blue?style=flat-square">
     </a>
     &nbsp;
     <a href="https://www.npmjs.com/package/use-preset">
@@ -11,9 +11,35 @@
   </p>
   <br />
   <p align="center">
-    <code>use-preset</code> is a scaffolding tool for developers. <a href="https://docs.usepreset.dev/">Read the documentation</a> for more informations.
+    <code>use-preset</code> is a scaffolding tool for developers. <a href="https://docs.usepreset.dev/">Read the documentation</a> for more information.
   </p>
   <br />
-  <pre align="center">npx use-preset use-preset/laravel-tailwindcss</pre>
+  <pre align="center">npx use-preset laravel-tailwindcss</pre>
   &nbsp;
 <p>
+
+# About
+
+This preset adds [Tailwind CSS](https://tailwindcss.com) to a fresh Laravel application.
+
+# Installation
+
+This preset is intended to be installed into a fresh Laravel application. Follow the [Laravel installation instructions](https://laravel.com/docs/7.x/installation) to ensure you have a working environment before continuing.
+
+**Then, run the following command**:
+
+```bash
+npx use-preset laravel-tailwindcss
+```
+
+# Modifications
+
+This preset gets rid of SASS and uses PostCSS instead. Nesting rules and importing files is still possible. If you are using Tailwind CSS, you really shouldn't need more than that, hence the riddance of SASS.
+
+- Removal of the `sass` and`sass-loader` dependencies
+- Removal of the `resources/sass` directory and its content
+- Addition of `tailwindcss`, `@tailwindcss/ui`, `@tailwindcss/typography`, `postcss-import` and `postcss-nested`
+- Addition of `app.css`, `base.css` and `components.css` in `resources/css`
+- Addition of `postcss.config.js` and `tailwind.config.js`
+- Modification of `webpack.mix.js`
+- Modification of `resources/views/welcome.blade.php`
