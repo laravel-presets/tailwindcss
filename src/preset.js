@@ -2,6 +2,8 @@ const { Preset } = require('use-preset');
 
 // prettier-ignore
 module.exports = Preset.make('Laravel Tailwind CSS')
+	.option('--interaction', true)
+
 	.editJson('package.json')
 		.title('Add Tailwind CSS')
 		.merge({
@@ -24,6 +26,7 @@ module.exports = Preset.make('Laravel Tailwind CSS')
 	.copyTemplates()
 
 	.installDependencies()
+		.if(({ flags }) => Boolean(flags.interaction))
 		.for('node')
 		.title('Install node dependencies')
 		.chain()
