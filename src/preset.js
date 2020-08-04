@@ -17,6 +17,13 @@ module.exports = Preset.make('Laravel Tailwind CSS')
 		})
 		.delete(['devDependencies.sass', 'devDependencies.sass-loader'])
 		.chain()
+
+	.edit('.gitignore')
+		.title('Update .gitignore')
+		.search(/\/node_modules/)
+		.addAfter('/public/build')
+		.end()
+		.chain()
 		
 	.delete()
 		.title('Delete SASS')
