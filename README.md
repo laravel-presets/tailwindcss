@@ -22,6 +22,8 @@
 
 This preset adds [Tailwind CSS](https://tailwindcss.com) to a fresh Laravel application.
 
+It can be the foundation of a preset based on Tailwind CSS, such as the [TALL preset](https://github.com/use-preset/tall) or the [Inertia one](https://github.com/use-preset/inertia), or can be used as a standalone preset.
+
 # Installation
 
 This preset is intended to be installed into a fresh Laravel application. Follow the [Laravel installation instructions](https://laravel.com/docs/7.x/installation) to ensure you have a working environment before continuing.
