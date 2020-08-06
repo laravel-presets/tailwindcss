@@ -22,6 +22,7 @@ module.exports = Preset.make('Laravel Tailwind CSS')
 		.title('Update .gitignore')
 		.search(/\/node_modules/)
 		.addAfter('/public/build')
+		.addAfter('/public/mix-manifest.json')
 		.end()
 		.chain()
 		
