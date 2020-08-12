@@ -45,6 +45,7 @@ jobs:
           cd ../app
           composer update
           npm i vue-template-compiler
+          npm i
 
       - name: Compile front-end
         run: |
