@@ -1,14 +1,14 @@
 {
-	"name": "laravel-tailwindcss",
-	"license": "MIT",
-	"preset": "src/preset.js",
-	"version": "0.1.2",
-	"private": "true",
-	"devDependencies": {
-		"standard-version": "^8.0.2",
-		"use-preset": "^0.1"
-	},
-	"scripts": {
-		"release": "standard-version --skip.changelog"
-	}
+  "name": "laravel-tailwindcss",
+  "license": "MIT",
+  "preset": "src/preset.js",
+  "version": "0.1.2",
+  "private": "true",
+  "devDependencies": {
+    "standard-version": "^8.0.2",
+    "use-preset": "^0.1.24"
+  },
+  "scripts": {
+    "release": "standard-version --skip.changelog"
+  }
 }
