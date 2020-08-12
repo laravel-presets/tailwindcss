@@ -38,7 +38,10 @@ npx use-preset laravel-tailwindcss
 
 An authentication scaffolding is available under the `--auth` flag. It will require `laravel/ui` and the Blade templates from the [official Tailwind CSS preset](https://github.com/laravel-frontend-presets/tailwindcss).
 
-> Note that in the future, the Blade templates will be remade and the authentication system will move to [single-action controllers](https://driesvints.com/blog/the-beauty-of-single-action-controllers/), so the dependency on `laravel/ui` can be removed.
+This functionality has been added to match the official Tailwind CSS preset's functionalities, but will be updated in the future:
+
+- It will get rid of `laravel/ui` by using [single-action controllers](https://driesvints.com/blog/the-beauty-of-single-action-controllers/)
+- The templates will be remade from scratch
 
 # Modifications
 
