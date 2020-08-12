@@ -44,12 +44,12 @@ jobs:
         run: |
           cd ../app
           composer update
-          yarn
+          npm i vue-template-compiler
 
       - name: Compile front-end
         run: |
           cd ../app
-          yarn dev
+          npm run dev
 
       - name: Execute tests
         run: |
