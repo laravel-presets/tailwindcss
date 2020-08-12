@@ -13,6 +13,7 @@ module.exports = Preset.make('Laravel Tailwind CSS')
 				'@tailwindcss/typography': '^0.2',
 				'postcss-nested': '^4',
 				'postcss-import': '^12',
+				'autoprefixer': '^9.6',
 				tailwindcss: '^1',
 			},
 		})
