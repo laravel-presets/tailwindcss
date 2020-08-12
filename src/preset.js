@@ -2,7 +2,8 @@ const { Preset } = require('use-preset');
 
 // prettier-ignore
 module.exports = Preset.make('Laravel Tailwind CSS')
-	.option('--interaction', true)
+	.option('interaction', true)
+	.option('auth', false)
 
 	.editJson('package.json')
 		.title('Add Tailwind CSS')
@@ -30,7 +31,15 @@ module.exports = Preset.make('Laravel Tailwind CSS')
 		.directories('resources/sass')
 		.chain()
 
-	.copyTemplates()
+	.copyDirectory('default')
+		.to('/')
+		.title('Install Tailwind CSS')
+		.chain()
+
+	.copyDirectory('auth')
+		.to('/')
+		.title('Scaffold authentication')
+		.chain()
 
 	.installDependencies()
 		.if(({ flags }) => Boolean(flags.interaction))
