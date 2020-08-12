@@ -34,6 +34,12 @@ This preset is intended to be installed into a fresh Laravel application. Follow
 npx use-preset laravel-tailwindcss
 ```
 
+# Authentication
+
+An authentication scaffolding is available under the `--auth` flag. It will require `laravel/ui` and the Blade templates from the [official Tailwind CSS preset](https://github.com/laravel-frontend-presets/tailwindcss).
+
+> Note that in the future, the Blade templates will be remade and the authentication system will move to [single-action controllers](https://driesvints.com/blog/the-beauty-of-single-action-controllers/), so the dependency on `laravel/ui` can be removed.
+
 # Modifications
 
 This preset gets rid of SASS and uses PostCSS instead. Nesting rules and importing files is still possible. If you are using Tailwind CSS, you really shouldn't need more than that, hence the riddance of SASS.
@@ -48,5 +54,5 @@ This preset gets rid of SASS and uses PostCSS instead. Nesting rules and importi
 
 # To-do
 
-- Catch up to the [official Tailwind CSS preset](https://github.com/laravel-frontend-presets/tailwindcss) in term of functionalities
-- Register the pagination under a flag (see the [Laravel docs](https://laravel.com/docs/7.x/pagination#using-tailwind))
+- Move authentication scaffolding to [single-action controllers](https://driesvints.com/blog/the-beauty-of-single-action-controllers/)
+- Refactor the templates from the [official Tailwind CSS preset](https://github.com/laravel-frontend-presets/tailwindcss) ones to custom ones

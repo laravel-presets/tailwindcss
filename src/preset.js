@@ -3,6 +3,7 @@ const { Preset } = require('use-preset');
 // prettier-ignore
 module.exports = Preset.make('Laravel Tailwind CSS')
 	.option('interaction', true)
+	.option('pagination', true)
 	.option('auth', false)
 
 	.editJson('package.json')
@@ -34,16 +35,50 @@ module.exports = Preset.make('Laravel Tailwind CSS')
 
 	.copyDirectory('default')
 		.to('/')
+		.whenConflict('override')
 		.title('Install Tailwind CSS')
 		.chain()
 
 	.copyDirectory('auth')
 		.to('/')
+		.whenConflict('override')
+		.if(({ flags }) => Boolean(flags.auth))
 		.title('Scaffold authentication')
+		.chain()
+
+	.editJson('composer.json')
+		.if(({ flags }) => Boolean(flags.auth))
+		.title('Add laravel/ui')
+		.merge({
+			require: {
+				'laravel/ui': '^2.1',
+			},
+		})
+		.chain()
+
+	.edit('app/Providers/AppServiceProvider.php')
+		.title('Setup pagination')
+		.if(({ flags }) => Boolean(flags.pagination))
+		.search(/use Illuminate\\Support\\ServiceProvider;/)
+			.addAfter('use Illuminate\\Pagination\\Paginator;')
+			.end()
+		.search(/public function boot\(\)/)
+			.addAfter([
+				`{`,
+				`    Paginator::useTailwind();`,
+			])
+			.removeAfter(2) // Removes opening curly bracket and comment
+			.end()
 		.chain()
 
 	.installDependencies()
 		.if(({ flags }) => Boolean(flags.interaction))
 		.for('node')
-		.title('Install node dependencies')
+		.title('Install Node dependencies')
+		.chain()
+		
+	.updateDependencies()
+		.if(({ flags }) => Boolean(flags.interaction) && Boolean(flags.auth))
+		.for('php')
+		.title('Update PHP dependencies')
 		.chain()
