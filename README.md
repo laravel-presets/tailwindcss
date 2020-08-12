@@ -45,3 +45,8 @@ This preset gets rid of SASS and uses PostCSS instead. Nesting rules and importi
 - Addition of `postcss.config.js` and `tailwind.config.js`
 - Modification of `webpack.mix.js`
 - Modification of `resources/views/welcome.blade.php`
+
+# To-do
+
+- Catch up to the [official Tailwind CSS preset](https://github.com/laravel-frontend-presets/tailwindcss) in term of functionalities
+- Register the pagination under a flag (see the [Laravel docs](https://laravel.com/docs/7.x/pagination#using-tailwind))
