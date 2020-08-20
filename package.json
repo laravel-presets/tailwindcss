@@ -5,8 +5,8 @@
   "version": "0.1.2",
   "private": "true",
   "devDependencies": {
-    "standard-version": "^8.0.2",
-    "use-preset": "^0.1.24"
+    "standard-version": "^9.0.0",
+    "use-preset": "^0.1.26"
   },
   "scripts": {
     "release": "standard-version --skip.changelog"
