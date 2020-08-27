@@ -19,6 +19,7 @@ module.exports = Preset.make('Laravel Tailwind CSS')
 			},
 		})
 		.delete(['devDependencies.sass', 'devDependencies.sass-loader'])
+		.indentWith('    ')
 		.chain()
 
 	.edit('.gitignore')
