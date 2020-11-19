@@ -1,4 +1,5 @@
 const { fontFamily } = require('tailwindcss/defaultTheme');
+const colors = require('tailwindcss/colors');
 
 module.exports = {
 	purge: [
@@ -10,11 +11,19 @@ module.exports = {
 		'./resources/**/*.php',
 		'./resources/**/*.vue',
 	],
-	darkMode: false, // or 'media' or 'class'
+	darkMode: 'media', // or 'media' or 'class'
 	theme: {
+		colors: {
+			white: '#ffffff',
+			black: '#000000',
+			gray: colors.coolGray,
+			indigo: colors.indigo,
+			red: colors.rose,
+			yellow: colors.amber,
+		},
 		extend: {
 			fontFamily: {
-				sans: ['Inter var', ...fontFamily.sans],
+				sans: ['Inter', ...fontFamily.sans],
 			},
 		},
 	},
