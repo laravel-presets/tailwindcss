@@ -26,12 +26,14 @@
   <pre align="center">npx use-preset laravel:tailwindcss</pre>
 </p>
 <br />
-<br />
 
 <div align="center">
-  This preset adds a basic Tailwind CSS installation to Laravel. It's a good starting point for any Laravel project using Tailwind.
+  This preset adds a basic Tailwind CSS installation to Laravel. 
   <br />
-  <a href="https://usepreset.dev">Learn more</a>
+  It's a good starting point for any Laravel project using Tailwind.
+  <br />
+  <br />
+  <a href="https://github.com/laravel-presets/tailwindcss/blob/master/preset.ts">See what it does</a> - <a href="https://usepreset.dev">Read documentation</a>
 </div>
 
 <p align="center">
