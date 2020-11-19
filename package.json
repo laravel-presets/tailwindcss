@@ -6,5 +6,6 @@
 	"preset": "preset.ts",
 	"devDependencies": {
 		"use-preset": "^0.2"
-	}
+	},
+	"dependencies": {}
 }

@@ -1,0 +1,15 @@
+/*
+|--------------------------------------------------------------------------
+| Base styles
+|--------------------------------------------------------------------------
+|
+| These directives import Tailwind's utilities and components in your
+| CSS, along with a modern CSS reset to normalize the default styles.
+| 
+| https://tailwindcss.com/docs/installation#include-tailwind-in-your-css
+|
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
