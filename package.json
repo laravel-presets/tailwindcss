@@ -1,14 +1,10 @@
 {
-  "name": "laravel-tailwindcss",
-  "license": "MIT",
-  "preset": "src/preset.js",
-  "version": "0.1.2",
-  "private": "true",
-  "devDependencies": {
-    "standard-version": "^9.0.0",
-    "use-preset": "^0.1.26"
-  },
-  "scripts": {
-    "release": "standard-version --skip.changelog"
-  }
+	"name": "@laravel-presets/tailwindcss",
+	"version": "0.1",
+	"author": "Enzo Innocenzi",
+	"license": "MIT",
+	"preset": "preset.ts",
+	"devDependencies": {
+		"use-preset": "^0.2"
+	}
 }
