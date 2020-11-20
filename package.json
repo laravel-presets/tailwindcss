@@ -4,8 +4,16 @@
 	"author": "Enzo Innocenzi",
 	"license": "MIT",
 	"preset": "preset.ts",
+	"prettier": {
+		"printWidth": 80,
+		"tabWidth": 2,
+		"trailingComma": "all",
+		"singleQuote": true,
+		"arrowParens": "always",
+		"useTabs": true,
+		"semi": true
+	},
 	"devDependencies": {
 		"use-preset": "^0.2"
-	},
-	"dependencies": {}
+	}
 }
