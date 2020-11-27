@@ -7,8 +7,8 @@
         <title>Laravel</title>
 
         <!-- Fonts -->
-				<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-				<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('build/app.css') }}" />

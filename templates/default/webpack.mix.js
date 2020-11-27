@@ -13,11 +13,11 @@ const { plugins } = require('./postcss.config');
  */
 
 mix
-	.js('resources/js/app.js', 'public/build')
-	.postCss('resources/css/app.css', 'public/build', plugins)
-	.sourceMaps()
-	.disableNotifications();
+  .js('resources/js/app.js', 'public/build')
+  .postCss('resources/css/app.css', 'public/build', plugins)
+  .sourceMaps()
+  .disableNotifications();
 
 if (mix.inProduction()) {
-	mix.version();
+  mix.version();
 }
