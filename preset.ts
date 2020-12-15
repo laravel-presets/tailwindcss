@@ -21,6 +21,15 @@ Preset.group((preset) => {
     .addDev('autoprefixer', '^10')
     .addDev('postcss', '^8.1.8')
     .addDev('vue-template-compiler', '^2.6.12');
+  preset.editNodePackages().merge({
+    scripts: {
+      dev: 'npm run development',
+      development: 'npx mix',
+      watch: 'npx mix watch',
+      prod: 'npm run production',
+      production: 'npx mix -p',
+    },
+  });
   preset.installDependencies().ifOption('install');
 }).withTitle('Installing dependencies...');
 
