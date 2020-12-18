@@ -1,19 +1,19 @@
 {
-	"name": "@laravel-presets/tailwindcss",
-	"version": "0.1",
-	"author": "Enzo Innocenzi",
-	"license": "MIT",
-	"preset": "preset.ts",
-	"prettier": {
-		"printWidth": 80,
-		"tabWidth": 2,
-		"trailingComma": "all",
-		"singleQuote": true,
-		"arrowParens": "always",
-		"useTabs": false,
-		"semi": true
-	},
-	"devDependencies": {
-		"use-preset": "^0.2"
-	}
+  "name": "@laravel-presets/tailwindcss",
+  "version": "0.1",
+  "author": "Enzo Innocenzi",
+  "license": "MIT",
+  "preset": "preset.ts",
+  "prettier": {
+    "printWidth": 80,
+    "tabWidth": 2,
+    "trailingComma": "all",
+    "singleQuote": true,
+    "arrowParens": "always",
+    "useTabs": false,
+    "semi": true
+  },
+  "devDependencies": {
+    "apply": "^0.0.1"
+  }
 }

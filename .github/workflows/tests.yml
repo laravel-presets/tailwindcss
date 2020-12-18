@@ -38,7 +38,7 @@ jobs:
       - name: Install preset
         run: |
           cd ../app
-          npx use-preset laravel:tailwindcss --no-interaction --install --no-ssh -vv
+          npx apply laravel:tailwindcss --no-interaction --install --no-ssh -vv
 
       - name: Install dependencies
         run: |
