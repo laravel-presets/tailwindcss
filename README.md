@@ -19,7 +19,7 @@
   </a>
   <br />
   <br />
-  <pre align="center">npx apply laravel:tailwindcss</pre>
+  <pre><div align="center">npx apply laravel:tailwindcss</div></pre>
 </p>
 <br />
 
