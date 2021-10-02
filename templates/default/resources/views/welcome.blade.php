@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
         <!-- Styles -->
-        <link rel="stylesheet" href="{{ mix('build/app.css') }}" />
+        <link rel="stylesheet" href="{{ mix('css/app.css') }}" />
     </head>
     <body class="antialiased">
         <div class="relative flex justify-center min-h-screen pb-4 bg-gray-100 items-top dark:bg-gray-900 sm:items-center sm:pt-0">
